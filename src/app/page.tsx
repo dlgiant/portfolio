@@ -6,12 +6,12 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('about');
 
   const skills = [
-    { name: 'TypeScript', level: 95, color: 'bg-blue-500' },
-    { name: 'React', level: 95, color: 'bg-cyan-500' },
-    { name: 'Python', level: 90, color: 'bg-yellow-500' },
-    { name: 'Ruby on Rails', level: 85, color: 'bg-red-500' },
-    { name: 'AWS', level: 85, color: 'bg-orange-500' },
-    { name: 'Cypress IO', level: 90, color: 'bg-green-500' },
+    { name: 'TypeScript', level: 90, color: 'bg-blue-500' },
+    { name: 'React', level: 98, color: 'bg-cyan-500' },
+    { name: 'Python', level: 95, color: 'bg-yellow-500' },
+    { name: 'Ruby on Rails', level: 65, color: 'bg-red-500' },
+    { name: 'AWS', level: 70, color: 'bg-orange-500' },
+    { name: 'Cypress IO', level: 98, color: 'bg-green-500' },
   ];
 
   const achievements = [
