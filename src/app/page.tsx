@@ -58,6 +58,7 @@ export default function Home() {
       icon: '🔐',
     },
   ];
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
@@ -165,20 +166,28 @@ export default function Home() {
           <p className="text-lg text-slate-600 dark:text-slate-400 mb-8">
             Ready to collaborate on your next project? I'm always excited to work on innovative solutions that make a difference.
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="mailto:contact@nunes.work"
+              href="mailto:rick@nunes.work"
               className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200"
             >
-              Get in Touch
+              📧 Get in Touch
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://github.com/dlgiant"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 border-2 border-slate-700 dark:border-slate-300 text-slate-700 dark:text-slate-300 rounded-full font-semibold hover:bg-slate-700 hover:text-white dark:hover:bg-slate-300 dark:hover:text-slate-900 transition-all duration-200"
             >
-              LinkedIn Profile
+              🐙 GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rick-nunes/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 border-2 border-slate-700 dark:border-slate-300 text-slate-700 dark:text-slate-300 rounded-full font-semibold hover:bg-slate-700 hover:text-white dark:hover:bg-slate-300 dark:hover:text-slate-900 transition-all duration-200"
+            >
+              💼 LinkedIn
             </a>
           </div>
         </div>
@@ -187,7 +196,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 py-8">
         <div className="container mx-auto px-6 text-center text-slate-600 dark:text-slate-400">
-          <p>© 2024 nunes.work • Built with Next.js, React, and TypeScript</p>
+          <p>© {currentYear} nunes.work • Built with Next.js, React, and TypeScript</p>
         </div>
       </footer>
     </div>
