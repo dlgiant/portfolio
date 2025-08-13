@@ -160,8 +160,8 @@ const Nav = ({ children }: any) => {
                 ${isExpanded || isPinned ? 'opacity-100' : 'opacity-0'}
               `}
             >
-              <p className="text-sm font-medium truncate">John Doe</p>
-              <p className="text-xs text-slate-400 truncate">john@example.com</p>
+              <p className="text-sm font-medium truncate">Rick Nunes</p>
+              <p className="text-xs text-slate-400 truncate">rick@nunes.work</p>
             </div>
           </div>
         </div>
