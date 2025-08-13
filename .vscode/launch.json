@@ -1,0 +1,149 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // {
+    //   "name": "Launch React App",
+    //   "type": "node",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/node_modules/.bin/react-scripts",
+    //   "args": ["start"],
+    //   "env": {
+    //     "NODE_ENV": "development",
+    //     "BROWSER": "none"
+    //   },
+    //   "cwd": "${workspaceFolder}",
+    //   "console": "integratedTerminal",
+    //   "restart": true,
+    //   "protocol": "inspector",
+    //   "port": 9229,
+    //   "runtimeExecutable": "/Users/ricardonunes/.nvm/versions/node/v24.4.0/bin/node",
+    //   "resolveSourceMapLocations": [
+    //     "${workspaceFolder}/**",
+    //     "!**/node_modules/**"
+    //   ]
+    // },
+    // {
+    //   "name": "Debug React App in Chrome",
+    //   "type": "chrome",
+    //   "request": "launch",
+    //   "url": "http://localhost:3000",
+    //   "webRoot": "${workspaceFolder}/src",
+    //   "sourceMapPathOverrides": {
+    //     "webpack:///src/*": "${webRoot}/*"
+    //   },
+    //   "preLaunchTask": "npm: start"
+    // },
+    // {
+    //   "name": "Debug React App in Edge",
+    //   "type": "msedge",
+    //   "request": "launch",
+    //   "url": "http://localhost:3000",
+    //   "webRoot": "${workspaceFolder}/src",
+    //   "sourceMapPathOverrides": {
+    //     "webpack:///src/*": "${webRoot}/*"
+    //   },
+    //   "preLaunchTask": "npm: start"
+    // },
+    // {
+    //   "name": "Attach to React App",
+    //   "type": "chrome",
+    //   "request": "attach",
+    //   "port": 9222,
+    //   "webRoot": "${workspaceFolder}/src",
+    //   "sourceMapPathOverrides": {
+    //     "webpack:///src/*": "${webRoot}/*"
+    //   }
+    // },
+    // {
+    //   "name": "Debug Jest Tests",
+    //   "type": "node",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/node_modules/.bin/react-scripts",
+    //   "args": ["test", "--runInBand", "--no-coverage", "--watchAll=false"],
+    //   "cwd": "${workspaceFolder}",
+    //   "console": "integratedTerminal",
+    //   "internalConsoleOptions": "neverOpen",
+    //   "env": {
+    //     "CI": "true"
+    //   },
+    //   "runtimeExecutable": "/Users/ricardonunes/.nvm/versions/node/v24.4.0/bin/node"
+    // },
+    // {
+    //   "name": "Debug Jest Tests (Current File)",
+    //   "type": "node",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/node_modules/.bin/react-scripts",
+    //   "args": [
+    //     "test",
+    //     "--runInBand",
+    //     "--no-coverage",
+    //     "--watchAll=false",
+    //     "${relativeFile}"
+    //   ],
+    //   "cwd": "${workspaceFolder}",
+    //   "console": "integratedTerminal",
+    //   "internalConsoleOptions": "neverOpen",
+    //   "env": {
+    //     "CI": "true"
+    //   },
+    //   "runtimeExecutable": "/Users/ricardonunes/.nvm/versions/node/v24.4.0/bin/node"
+    // },
+    // {
+    //   "name": "Debug Storybook",
+    //   "type": "node",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/node_modules/.bin/start-storybook",
+    //   "args": ["-p", "6006"],
+    //   "cwd": "${workspaceFolder}",
+    //   "console": "integratedTerminal",
+    //   "env": {
+    //     "NODE_ENV": "development"
+    //   }
+    // },
+    // {
+    //   "name": "Debug Build Process",
+    //   "type": "node",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/node_modules/.bin/react-scripts",
+    //   "args": ["build"],
+    //   "cwd": "${workspaceFolder}",
+    //   "console": "integratedTerminal",
+    //   "env": {
+    //     "NODE_ENV": "production"
+    //   }
+    // },
+    {
+      "name": "Launch Next",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/.bin/next",
+      "args": ["dev"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "runtimeExecutable": "/Users/ricardonunes/.nvm/versions/node/v24.4.0/bin/node"
+    },
+    {
+      "name": "Launch Storybook",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/.bin/storybook",
+      "args": ["dev", "-p", "6006"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "runtimeExecutable": "/Users/ricardonunes/.nvm/versions/node/v24.4.0/bin/node"
+    },
+  ],
+  "compounds": [
+    {
+      "name": "Launch All",
+      "configurations": ["Launch Next", "Launch Storybook"],
+      "stopAll": true
+    }
+  ]
+}
