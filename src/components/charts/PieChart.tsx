@@ -8,7 +8,6 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  TooltipProps,
   Label,
 } from 'recharts';
 
@@ -29,7 +28,7 @@ interface PieChartProps {
   colors?: string[];
 }
 
-const CustomTooltip = ({ active, payload }: TooltipProps<any, any>) => {
+const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     const data = payload[0];
     return (
@@ -117,7 +116,7 @@ const PieChart: React.FC<PieChartProps> = ({
             fill="#8884d8"
             dataKey="value"
           >
-            {dataWithColors.map((entry, index) => (
+            {dataWithColors.map((entry: any, index: number) => (
               <Cell key={`cell-${index}`} fill={entry.fill} />
             ))}
             {centerLabel && innerRadius > 0 && (

@@ -185,6 +185,9 @@ export const AllVariants: Story = {
 
 // Simple dark mode test
 export const SimpleDarkTest: Story = {
+  args: {
+    children: 'Button',
+  },
   render: () => {
     const [isDark, setIsDark] = React.useState(false);
     
