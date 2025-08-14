@@ -1,5 +1,6 @@
 'use client';
 
+import Button from '@/components/ui/Button';
 import { useState } from 'react';
 
 export default function FundamentalsPage() {
@@ -23,6 +24,7 @@ export default function FundamentalsPage() {
   children: React.ReactNode;
 }`,
       demo: true,
+      show: [<Button>Primary</Button>]
     },
   ];
 
@@ -104,68 +106,72 @@ export default function FundamentalsPage() {
       {/* Content */}
       <div className="container mx-auto px-6 py-8">
         {activeTab === 'components' && (
-          <div className="grid gap-6">
+          <div className="grid">
             {components.map((component, index) => (
               <div
                 key={index}
                 className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow"
               >
-                <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-2">
-                  {component.title}
-                </h3>
-                <p className="text-slate-600 dark:text-slate-400 mb-4">
-                  {component.description}
-                </p>
-                
-                {/* Code Preview */}
-                <div className="bg-slate-900 dark:bg-slate-950 rounded-lg p-3 mb-4 overflow-x-auto">
-                  <pre className="text-xs text-green-400 font-mono">
-                    <code>{component.code}</code>
-                  </pre>
-                </div>
+                  {/* Main content - spans most columns */}
+                  <div className="relative lg:col-span-10">
+                    <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-2">
+                      {component.title}
+                    </h3>
+                    <p className="text-slate-600 dark:text-slate-400 mb-4">
+                      {component.description}
+                    </p>
+                    
+                    {/* Code Preview */}
+                    <div className="bg-slate-900 dark:bg-slate-950 rounded-lg p-3 mb-4 overflow-x-auto">
+                      <pre className="text-xs text-green-400 font-mono">
+                        <code>{component.code}</code>
+                      </pre>
+                    </div>
 
-                {/* Features */}
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                    Key Features:
-                  </h4>
-                  <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
-                    {component.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <span className="text-green-500 mt-0.5">✓</span>
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                    {/* Features */}
+                    <div className="mb-4">
+                      <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+                        Key Features:
+                      </h4>
+                      <ul className="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+                        {component.features.map((feature, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <span className="text-green-500 mt-0.5">✓</span>
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
-                {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {component.tech.map((tech, idx) => (
-                    <span
-                      key={idx}
-                      className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-md text-xs font-medium"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                    {/* Tech Stack */}
+                    <div className="flex flex-wrap gap-2">
+                      {component.tech.map((tech, idx) => (
+                        <span
+                          key={idx}
+                          className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-md text-xs font-medium"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    {/* Demo Link */}
+                    {(component as any).demo && (
+                      <div className="absolute bottom-0 right-0">
+                        <a
+                          href="https://design.nunes.work"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 w-full lg:w-auto justify-center"
+                        >
+                          <span>View Live Demo</span>
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </a>
+                      </div>
+                    )}
+                  </div>
                 </div>
-
-                {/* Demo Link */}
-                {(component as any).demo && (
-                  <a
-                    href="https://design.nunes.work"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200"
-                  >
-                    <span>View Live Demo</span>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
-                )}
-              </div>
             ))}
           </div>
         )}
