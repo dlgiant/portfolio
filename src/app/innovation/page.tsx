@@ -45,7 +45,7 @@ export default function InnovationPage() {
         'Additional heads for crown diameter estimation and canopy density calculation',
         'Optional SAM integration for mask refinement',
       ],
-      impact: 'Improve forest health by recognizing cacao trees affected by Witche\'s Broom disease and other health metrics',
+      impact: 'Improve forest health by recognizing cacao trees affected by Witches\' brooms disease and other health metrics',
     },
   ];
 
