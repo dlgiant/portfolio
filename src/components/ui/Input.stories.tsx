@@ -106,6 +106,9 @@ export const Disabled: Story = {
 
 // Different sizes
 export const Sizes: Story = {
+  args: {
+    placeholder: 'Input',
+  },
   render: () => (
     <div className="space-y-4">
       <Input size="sm" placeholder="Small input" />
@@ -163,6 +166,9 @@ export const FullWidth: Story = {
 
 // Form example
 export const FormExample: Story = {
+  args: {
+    placeholder: 'Input',
+  },
   render: () => (
     <form className="space-y-4 w-full">
       <Input

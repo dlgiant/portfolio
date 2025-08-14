@@ -33,12 +33,6 @@ export default function SideNav() {
       icon: '🚀',
       description: 'ML features, experimental work',
     },
-    {
-      href: '/production',
-      label: 'Production',
-      icon: '⚡',
-      description: 'Scaled systems, monitoring, MLOps',
-    },
   ];
 
   return (
@@ -71,10 +65,10 @@ export default function SideNav() {
           isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
         }`}
       >
-        <div className="p-6">
+        <div className="p-6 flex flex-col h-screen">
           <div className="mb-8">
             <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
-              Portfolio
+              Ricardo Nunes
             </h1>
             <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
               Full-Stack Engineering Journey
@@ -119,7 +113,7 @@ export default function SideNav() {
             })}
           </nav>
 
-          <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-700">
+          <div className="mt-auto pt-8 border-t border-slate-200 dark:border-slate-700">
             <div className="space-y-4">
               <a
                 href="https://github.com/dlgiant"

@@ -84,6 +84,9 @@ export const Ghost: Story = {
 
 // Button sizes
 export const Sizes: Story = {
+  args: {
+    children: 'Button',
+  },
   render: () => (
     <div className="flex items-center gap-4">
       <Button size="sm">Small</Button>
@@ -111,6 +114,9 @@ export const Disabled: Story = {
 
 // With icons
 export const WithIcons: Story = {
+  args: {
+    children: 'Button',
+  },
   render: () => (
     <div className="flex flex-col gap-4">
       <Button
@@ -153,6 +159,9 @@ export const FullWidth: Story = {
 
 // All variants showcase
 export const AllVariants: Story = {
+  args: {
+    children: 'Button',
+  },
   render: () => (
     <div className="flex flex-col gap-4">
       <div className="flex gap-4">

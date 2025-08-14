@@ -2,99 +2,88 @@
 
 export default function InnovationPage() {
   const mlProjects = [
+    // {
+    //   title: 'Sentiment Analysis Engine',
+    //   description: 'NLP-powered sentiment analysis for customer feedback',
+    //   icon: '🧠',
+    //   model: 'BERT Fine-tuned',
+    //   accuracy: '94.5%',
+    //   tech: ['Python', 'TensorFlow', 'Transformers', 'FastAPI'],
+    //   features: [
+    //     'Multi-language support',
+    //     'Real-time processing',
+    //     'Emotion detection',
+    //     'Aspect-based sentiment',
+    //   ],
+    //   impact: 'Reduced manual review time by 75%',
+    // },
+    // {
+    //   title: 'Recommendation System',
+    //   description: 'Collaborative filtering for personalized content recommendations',
+    //   icon: '🎯',
+    //   model: 'Neural Collaborative Filtering',
+    //   accuracy: '89.2%',
+    //   tech: ['Python', 'PyTorch', 'Redis', 'Apache Spark'],
+    //   features: [
+    //     'Real-time recommendations',
+    //     'Cold start handling',
+    //     'A/B testing framework',
+    //     'Explainable AI insights',
+    //   ],
+    //   impact: '35% increase in user engagement',
+    // },
     {
-      title: 'Sentiment Analysis Engine',
-      description: 'NLP-powered sentiment analysis for customer feedback',
-      icon: '🧠',
-      model: 'BERT Fine-tuned',
-      accuracy: '94.5%',
-      tech: ['Python', 'TensorFlow', 'Transformers', 'FastAPI'],
+      title: 'MVP - Cacao Classification - Precision Agroforestry',
+      description: 'Computer vision platform for monitoring cacao forests in a cabruca system',
+      icon: '🛰️ 🌳',
+      model: 'Dual-head architecture combining Mask R-CNN and DeepLabV3+',
+      accuracy: '80%',
+      tech: ['Python', 'Keras', 'OpenCV', 'Docker', 'Planet-SkySat', 'WorldView'],
       features: [
-        'Multi-language support',
-        'Real-time processing',
-        'Emotion detection',
-        'Aspect-based sentiment',
+        'Instance segmentation for detecting individual trees',
+        'Semantic segmentation for land cover classification',
+        'Additional heads for crown diameter estimation and canopy density calculation',
+        'Optional SAM integration for mask refinement',
       ],
-      impact: 'Reduced manual review time by 75%',
-    },
-    {
-      title: 'Recommendation System',
-      description: 'Collaborative filtering for personalized content recommendations',
-      icon: '🎯',
-      model: 'Neural Collaborative Filtering',
-      accuracy: '89.2%',
-      tech: ['Python', 'PyTorch', 'Redis', 'Apache Spark'],
-      features: [
-        'Real-time recommendations',
-        'Cold start handling',
-        'A/B testing framework',
-        'Explainable AI insights',
-      ],
-      impact: '35% increase in user engagement',
-    },
-    {
-      title: 'Image Classification API',
-      description: 'Computer vision API for product categorization',
-      icon: '📷',
-      model: 'ResNet-50 Transfer Learning',
-      accuracy: '96.8%',
-      tech: ['Python', 'Keras', 'OpenCV', 'Docker'],
-      features: [
-        'Multi-class classification',
-        'Batch processing',
-        'Auto-tagging',
-        'Visual similarity search',
-      ],
-      impact: 'Automated 90% of product categorization',
+      impact: 'Improve forest health by recognizing cacao trees affected by Witche\'s Broom disease and other health metrics',
     },
   ];
 
-  const experiments = [
-    {
-      title: 'WebAssembly Performance',
-      description: 'Explored WASM for compute-intensive browser applications',
-      status: 'success',
-      findings: [
-        '3x performance improvement for image processing',
-        'Near-native execution speed',
-        'Reduced server load by 60%',
-      ],
-      tech: ['Rust', 'WebAssembly', 'JavaScript'],
-    },
-    {
-      title: 'Edge Computing with Workers',
-      description: 'Implemented edge functions for global content delivery',
-      status: 'production',
-      findings: [
-        'Reduced latency by 70%',
-        'Improved SEO with dynamic rendering',
-        'Cost reduction of 40%',
-      ],
-      tech: ['Cloudflare Workers', 'TypeScript', 'KV Storage'],
-    },
-    {
-      title: 'Real-time Collaboration',
-      description: 'Built collaborative editing with CRDTs',
-      status: 'prototype',
-      findings: [
-        'Conflict-free concurrent editing',
-        'Offline-first capability',
-        'Scalable to 100+ users',
-      ],
-      tech: ['Yjs', 'WebRTC', 'Socket.io'],
-    },
-  ];
+  // const experiments = [
+  //   {
+  //     title: 'WebAssembly Performance',
+  //     description: 'Explored WASM for compute-intensive browser applications',
+  //     status: 'success',
+  //     findings: [
+  //       '3x performance improvement for image processing',
+  //       'Near-native execution speed',
+  //       'Reduced server load by 60%',
+  //     ],
+  //     tech: ['Rust', 'WebAssembly', 'JavaScript'],
+  //   },
+  //   {
+  //     title: 'Real-time Collaboration',
+  //     description: 'Built collaborative editing with CRDTs',
+  //     status: 'prototype',
+  //     findings: [
+  //       'Conflict-free concurrent editing',
+  //       'Offline-first capability',
+  //       'Scalable to 100+ users',
+  //     ],
+  //     tech: ['Yjs', 'WebRTC', 'Socket.io'],
+  //   },
+  // ];
 
   const innovations = [
-    {
-      category: 'AI/ML Integration',
-      items: [
-        'GPT-4 API integration for content generation',
-        'Custom LLM fine-tuning for domain-specific tasks',
-        'Prompt engineering for optimal results',
-        'RAG (Retrieval Augmented Generation) implementation',
-      ],
-    },
+    // {
+    //   category: 'AI/ML Integration',
+    //   items: [
+    //     'GPT-4 API integration for content generation',
+    //     'Custom LLM fine-tuning for domain-specific tasks',
+    //     'Prompt engineering for optimal results',
+    //     'RAG (Retrieval Augmented Generation) implementation',
+    //   ],
+    // },
     {
       category: 'Performance Optimization',
       items: [
@@ -109,7 +98,7 @@ export default function InnovationPage() {
       items: [
         'Custom CLI tools for automation',
         'GitHub Actions for CI/CD',
-        'Automated testing frameworks',
+        'Automated testing frameworks - Cypress IO',
         'Documentation generation',
       ],
     },
@@ -134,7 +123,7 @@ export default function InnovationPage() {
         <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-8">
           Machine Learning Projects
         </h2>
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className="grid">
           {mlProjects.map((project, index) => (
             <div
               key={index}
@@ -201,7 +190,7 @@ export default function InnovationPage() {
       </div>
 
       {/* Experimental Work */}
-      <div className="container mx-auto px-6 py-12">
+      {/* <div className="container mx-auto px-6 py-12">
         <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-8">
           Experimental Work
         </h2>
@@ -266,7 +255,7 @@ export default function InnovationPage() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Innovation Areas */}
       <div className="container mx-auto px-6 py-12">

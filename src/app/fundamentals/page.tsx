@@ -24,40 +24,6 @@ export default function FundamentalsPage() {
 }`,
       demo: true,
     },
-    {
-      title: 'Form Validation System',
-      description: 'Custom form validation library with real-time feedback',
-      tech: ['JavaScript', 'React Hook Form', 'Zod'],
-      features: [
-        'Schema-based validation',
-        'Custom error messages',
-        'Async validation support',
-        'Field-level error handling',
-      ],
-      code: `const schema = z.object({
-  email: z.string().email(),
-  password: z.string().min(8),
-  age: z.number().min(18)
-});`,
-    },
-    {
-      title: 'Data Table Component',
-      description: 'Advanced data table with sorting, filtering, and pagination',
-      tech: ['React', 'TanStack Table', 'Tailwind CSS'],
-      features: [
-        'Server-side pagination',
-        'Multi-column sorting',
-        'Advanced filtering',
-        'CSV export functionality',
-      ],
-      code: `const table = useReactTable({
-  data,
-  columns,
-  getCoreRowModel: getCoreRowModel(),
-  getPaginationRowModel: getPaginationRowModel(),
-  getSortedRowModel: getSortedRowModel(),
-});`,
-    },
   ];
 
   const apis = [
@@ -138,7 +104,7 @@ export default function FundamentalsPage() {
       {/* Content */}
       <div className="container mx-auto px-6 py-8">
         {activeTab === 'components' && (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid gap-6">
             {components.map((component, index) => (
               <div
                 key={index}

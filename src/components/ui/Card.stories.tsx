@@ -104,6 +104,9 @@ export const NoBorder: Story = {
 
 // Different padding sizes
 export const PaddingSizes: Story = {
+  args: {
+    children: 'Card content',
+  },
   render: () => (
     <div className="space-y-4">
       <Card padding="sm" title="Small Padding">
@@ -121,6 +124,9 @@ export const PaddingSizes: Story = {
 
 // Different shadow sizes
 export const ShadowSizes: Story = {
+  args: {
+    children: 'Card content',
+  },
   render: () => (
     <div className="space-y-6">
       <Card shadow="none" title="No Shadow">

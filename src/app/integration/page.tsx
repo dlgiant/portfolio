@@ -3,36 +3,12 @@
 export default function IntegrationPage() {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with real-time inventory management',
-      image: '🛍️',
-      architecture: {
-        frontend: ['React', 'Next.js', 'Redux Toolkit', 'Tailwind CSS'],
-        backend: ['Node.js', 'Express', 'PostgreSQL', 'Redis'],
-        infrastructure: ['AWS EC2', 'S3', 'CloudFront', 'RDS'],
-      },
-      features: [
-        'Real-time inventory tracking',
-        'Payment gateway integration (Stripe)',
-        'Order management system',
-        'Admin dashboard with analytics',
-        'Email notifications',
-        'Mobile-responsive design',
-      ],
-      metrics: {
-        users: '10K+ active users',
-        transactions: '50K+ transactions',
-        uptime: '99.9% uptime',
-        performance: '< 2s load time',
-      },
-    },
-    {
       title: 'Analytics Dashboard',
       description: 'Data visualization platform with real-time metrics and reporting',
       image: '📊',
       architecture: {
         frontend: ['React', 'D3.js', 'Chart.js', 'Material-UI'],
-        backend: ['Python', 'FastAPI', 'MongoDB', 'Celery'],
+        backend: ['Python', 'FastAPI', 'MongoDB', 'Ruby On Rails'],
         infrastructure: ['Docker', 'Kubernetes', 'AWS EKS'],
       },
       features: [
@@ -50,38 +26,9 @@ export default function IntegrationPage() {
         performance: '< 100ms query time',
       },
     },
-    {
-      title: 'Social Media Aggregator',
-      description: 'Multi-platform social media management and analytics tool',
-      image: '🌐',
-      architecture: {
-        frontend: ['Vue.js', 'Vuex', 'Vuetify', 'WebSockets'],
-        backend: ['Ruby on Rails', 'Sidekiq', 'PostgreSQL', 'ElasticSearch'],
-        infrastructure: ['Heroku', 'AWS Lambda', 'CloudWatch'],
-      },
-      features: [
-        'Multi-platform integration',
-        'Scheduled posting',
-        'Sentiment analysis',
-        'Engagement tracking',
-        'Content calendar',
-        'Team collaboration',
-      ],
-      metrics: {
-        platforms: '5+ social platforms',
-        posts: '100K+ posts managed',
-        analytics: 'Real-time analytics',
-        teams: '500+ teams using',
-      },
-    },
   ];
 
   const integrations = [
-    {
-      category: 'Payment Systems',
-      services: ['Stripe', 'PayPal', 'Square', 'Razorpay'],
-      color: 'bg-green-500',
-    },
     {
       category: 'Authentication',
       services: ['Auth0', 'Firebase Auth', 'AWS Cognito', 'Okta'],
@@ -94,17 +41,17 @@ export default function IntegrationPage() {
     },
     {
       category: 'Monitoring',
-      services: ['Datadog', 'New Relic', 'Sentry', 'LogRocket'],
+      services: ['Datadog', 'New Relic', 'LogRocket'],
       color: 'bg-orange-500',
     },
     {
       category: 'Communication',
-      services: ['SendGrid', 'Twilio', 'Pusher', 'Socket.io'],
+      services: ['Slack'],
       color: 'bg-pink-500',
     },
     {
       category: 'Analytics',
-      services: ['Google Analytics', 'Mixpanel', 'Segment', 'Amplitude'],
+      services: ['Google Analytics'],
       color: 'bg-indigo-500',
     },
   ];
